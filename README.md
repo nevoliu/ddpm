@@ -1,0 +1,2 @@
+# ddpm
+ddpm and ddim 
