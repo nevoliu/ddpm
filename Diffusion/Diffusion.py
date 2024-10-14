@@ -137,8 +137,8 @@ class GaussianDDIMSampler(nn.Module):
 
         for i in reversed(range(0, steps)):
 
-            t = torch.full((x_t.shape[0],), time_steps[i], device=x_t.device, dtype=torch.long)
-            prev_t = torch.full((x_t.shape[0],), time_steps_prev[i], device=x_t.device, dtype=torch.long)
+            t = torch.full((x_t.shape[0],), int(time_steps[i]), device=x_t.device, dtype=torch.long)
+            prev_t = torch.full((x_t.shape[0],), int(time_steps_prev[i]), device=x_t.device, dtype=torch.long)
 
             alpha_t = extract(self.alpha_t_bar, t, x_t.shape)
             alpha_t_prev = extract(self.alpha_t_bar, prev_t, x_t.shape)
