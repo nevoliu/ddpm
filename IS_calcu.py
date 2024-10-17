@@ -9,7 +9,7 @@ from torchvision.models import Inception_V3_Weights
 
 device = torch.device('cuda')
 
-generated_images_folder = './compare/ddim'
+generated_images_folder = '../data/ffhq/compare/ddim'
 
 files_path = sorted(os.listdir(generated_images_folder))
 

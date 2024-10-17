@@ -27,7 +27,7 @@ def infer(modelConfig: Dict):
         print("model load weight done.")
         model.eval()
 
-        sampler = GaussianDDPMSampler(
+        sampler = GaussianDDIMSampler(
                 model, modelConfig["beta_1"], modelConfig["beta_T"], modelConfig["T"]).to(device)
         
 

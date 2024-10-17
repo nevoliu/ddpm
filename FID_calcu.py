@@ -18,8 +18,8 @@ NUM_WORKERS = 4
 device = torch.device('cuda')
 
 # 准备真实数据分布和生成模型的图像数据
-real_images_folder = './compare/truth'
-generated_images_folder = './compare/ddpm'
+real_images_folder = '../data/ffhq/compare/truth'
+generated_images_folder = '../data/ffhq/compare/ddpm'
 
 
 
